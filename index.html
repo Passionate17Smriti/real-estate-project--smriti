@@ -8,43 +8,201 @@
     <link rel="stylesheet" href="./main.css">
   </head>
   <body>
-    <!-- navbar start -->
-    <nav class="bg-[#2B2B2B] text-white  h-10 p-5 flex justify-between items-center">
+
+    <!-- desktop version navbar start -->
+     <section class="black-grad md:sticky md:top-0 md:overflow-x-auto">
+      <nav class=" text-white  h-13 p-5 flex justify-between items-center hidden md:block md:flex  md:max-w-[1200px] md:mx-auto gap-10">
+        <div class="text-xl font-bold">
+          <ul>
+            <li><a href="#Home">Logo</a></li>
+
+          </ul>
+          
+        </div>
+        <ul class="flex justify-between gap-20 text-md">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="#Find a Team">Find a Team</a></li>
+          <li><a href="#About Us">About Us</a></li>
+          <li><a href="#Articles">Articles</a></li>
+          <li><a href="#Portfolio">Portfolio</a></li>
+          <li><a href="#Contact Us">Contact Us</a></li>
+        </ul>
+      </nav>
+
+     </section>
+    
+    <!-- desktop version navbar end -->
+
+
+    <!-- mobile version navbar start -->
+    <nav class="bg-[#2B2B2B] text-white  h-10 p-5 flex justify-between items-center md:hidden">
       <div class="text-xl font-bold">Logo</div>
       <div><img src="public/icon_bar.png" alt=""></div>
     </nav>
-    <!-- navbar end -->
+    <!-- mobile version navbar end -->
 
     
      <main>
       <!-- hero section start -->
-       <section class="black-grad text-white ">
-        <div class="flex flex-col pt-20 px-5 gap-2">
-          <h1 class="text-xl font-medium">We Provide <br>
-            Architectural design <br>
-            and Construction </h1>
+       <section class="black-grad " id="Home">
 
-            <p class="text-[#C4C4C4] text-base">
-              More than 100 building and housing projects that we have built. <br>
-              The building owner chose us over other contractors in Jakarta,<br>
-              because our work is different</p>
+        <div class=" text-white flex flex-col md:flex-row md:items-end md:gap-10 md:max-w-[1200px] md:mx-auto">
+          <div class="flex flex-col pt-20 px-5 gap-4">
+            <h1 class="text-xl font-medium md:text-5xl">We Provide <br>
+              Architectural design <br>
+              and Construction </h1>
+  
+              <p class="text-[#C4C4C4] text-base md:max-w-[35rem] md:text-lg md:mt-8">
+                More than 100 building and housing projects that we have built. <br>
+                The building owner chose us over other contractors in Jakarta,<br>
+                because our work is different</p>
+  
+                <button class="self-start text-base font-semibold bg-blue-500 px-3 py-1.5 md:text-md md:px-11 md:py-5 md:mt-8">Discover More</button>
+  
+                <!-- desktop stat section start  -->
+  
+                <div class="md:flex md:gap-9 md:mt-8 hidden md:block md:pb-14">
+                  <div class="md:flex md:flex-col ">
 
-              <button class="self-start text-base font-semibold bg-blue-500 px-3 py-1.5">Discover More</button>
-        </div>
+                    <div class="flex">
+                      <div>
+                        <h3 class="text-xl font-bold md:text-3xl">300</h3>
+                        
+                      </div>
+                      <div>
+  
+                        <h3 class="text-xl font-bold md:text-3xl md:text-[#2387C0]">+</h3>
+  
+                      </div>
 
-        <!-- hero img start -->
-         <div class="flex justify-end -mt-28">
-          <img src="public/hero_building.png" alt="">
+                    </div>
+
+                    <p class="text-sm font-semibold md:text-lg">
+                      Happy <br> Client
+                    </p>
+                  </div>
+        
+                  <div class="md:flex md:flex-col">
+                    <div class="flex">
+                      <div>
+                        <h3 class="text-xl font-bold md:text-3xl">900</h3>
+                        
+                      </div>
+                      <div>
+  
+                        <h3 class="text-xl font-bold md:text-3xl md:text-[#2387C0]">+</h3>
+  
+                      </div>
+
+                    </div>
+                    
+                    
+                    <p class="text-sm font-semibold md:text-lg">
+                      Amazing <br> Projects
+                    </p>
+                  </div>
+        
+                  <div class="md:flex md:flex-col">
+
+                    <div class="flex">
+                      <div>
+                        <h3 class="text-xl font-bold md:text-3xl">20</h3>
+                        
+                      </div>
+                      <div>
+  
+                        <h3 class="text-xl font-bold md:text-3xl md:text-[#2387C0]">+</h3>
+  
+                      </div>
+
+                    </div>
+                    
+                    <p class="text-sm font-semibold md:text-lg">
+                      Awards <br>Winnings
+                    </p>
+                  </div>
+                </div>
+  
+                <!-- desktop stat section end  -->
+          </div>
+  
+          <!-- hero img start -->
+           <div class="flex justify-end -mt-28 md:absolute right-0 md:mb-11">
+            <picture>
+              <source media="(min-width: 765px)" srcset="/big_hero_image.png" />
+              <source media="(max-width: 768px)" srcset="/hero_building.png" />
+              <img src="/hero_building.png" alt="Small building" class="md:w-[500px]" />
+            </picture>
+  
+           </div>
+  
+          <!-- hero img end -->
+
+           <!-- desktop blue version start  -->
+
+         <div class="blue-grad-2 p-5 text-white flex flex-col gap-4 hidden md:block md:max-w-[745px] md:absolute right-0 md:justify-between md:min-h-[166px]">
+          <div class="flex justify-between md:justify-normal md:gap-8">
+            <div>
+              <div class="flex items-baseline md:gap-11">
+                <div class="text-xl font-bold">
+                  <h4 class="md:text-lg md:font-semibold md:pb-3">General</h4>
+                  <h2 class="md:text-xl">Project</h2>
+                </div>
+
+
+                <div>
+
+                  <div class="md:flex md:items-baseline ">
+                    <h2 class="text-3xl font-bold md:pb-3">25</h2>
+                <h2 class="text-lg font-semibold ml-1">Years</h2>
+
+                  </div>
+
+                  
+              
+              <h3 class="text-xl font-semibold -mt-3">Operated</h3>
+                  
+                </div>
+              </div>
+                
+            </div>
+
+            <div class="md:pr-9 md:pl-5">
+
+              <p class="text-sm md:leading-7 md:text-base md:text-center md:pt-6 md:pr-9">
+                As a trusted general project that has been operating for 25 years, our commitment is always to prioritize our client satisfaction.
+              </p>
+  
+            </div>
+    
+
+
+            
+          </div>
+
+          
+         
+          </div>
+
+        
+
+        <!-- desktop blue version end -->
+
+         
+  
          </div>
+  
+        <!-- hero section end -->
 
-        <!-- hero img end -->
+        
 
        </section>
-
-      <!-- hero section end -->
+      
+       
 
       <!-- stat section start  -->
-       <section class="blue-grad-2 p-5 text-white flex flex-col gap-4">
+       <section class="blue-grad-2 p-5 text-white flex flex-col gap-4 md:hidden">
         <div class="flex justify-between">
           <div>
             <div class="flex items-baseline">
@@ -113,7 +271,7 @@
       <!-- brand logo end -->
 
       <!-- services start  -->
-       <section class="md:bg-[#f8f8f8]">
+       <section class="md:bg-[#f8f8f8]" id="Services">
 
         <div class="p-5 md:max-w-[1200px] md:mx-auto md:mt-20">
           <div class="flex flex-col gap-2 text-center md:flex-row md:justify-between md:items-end md:mt-9">
@@ -184,7 +342,7 @@
       <!-- services end -->
 
       <!-- what makes us start  -->
-       <section class="p-5 md:max-w-[1200px] md:mx-auto md:mt-11">
+       <section class="p-5 md:max-w-[1200px] md:mx-auto md:mt-11" id="Find a Team">
         <div class="flex flex-col gap-2 ">
           <div class="h-1 w-[90px] blue-grad">
 
@@ -223,7 +381,7 @@
 
       <!-- frame start  -->
 
-      <div class="flex flex-col items-center text-center mt-10 gap-10 md:flex-row md:mx-auto md:max-w-[1200px]  md:mt-20 md:items-baseline">
+      <div class="flex flex-col items-center text-center mt-10 gap-10 md:flex-row md:mx-auto md:max-w-[1200px]  md:mt-20 md:items-baseline overflow-x-auto">
         <div class="items-center flex flex-col gap-2 min-w-[16.25rem] max-w-[14.625rem] md:items-start">
           <div>
             <img src="public/Frame_1.png" alt="" class="md:items-start">
@@ -333,7 +491,7 @@
      <!-- our team end -->
 
     <!--our story section start-->
-  <section class="p-5  md:max-w-[1200px] md:mx-auto">
+  <section class="p-5  md:max-w-[1200px] md:mx-auto" id="About Us">
 
     <div class="flex flex-col gap-2 min-w-[16.25rem] md:flex-row-reverse md:flex-1">
       <div>
@@ -364,7 +522,7 @@
 
 
      <!-- news and update start  -->
-      <section class="p-5 md:max-w-[1200px] md:mx-auto md:mt-12">
+      <section class="p-5 md:max-w-[1200px] md:mx-auto md:mt-12" id="Articles">
         <h2 class="text-xl font-bold md:text-4xl">News & Update</h2>
 
         <div class="flex flex-row gap-2 overflow-x-auto">
@@ -444,7 +602,7 @@
      <!-- news and update end  -->
 
      <!--project section start-->
-  <section class="p-5 flex flex-col gap-8 md:max-w-[1200px] md:mx-auto md:mt-12">
+  <section class="p-5 flex flex-col gap-8 md:max-w-[1200px] md:mx-auto md:mt-12" id="Portfolio">
 
     <h2 class="text-[#242527] text-xl font-bold md:text-4xl">Our collection <br>
       best project </h2>
@@ -456,7 +614,7 @@
       <picture>
         <source media="(min-width: 799px)" srcset="public/projects_big/projects_big_1.png" />
         <source media="(max-width: 800px)" srcset="/public/project1.png" />
-        <img src="/public/projects/project1.png" alt="Small projects" class="md:w-[500px] md:h-[478px]" />
+        <img src="/public/projects/project1.png" alt="Small projects" class="md:w-[500px] " />
       </picture>
 
       <picture>
@@ -487,7 +645,7 @@
 
      <!-- footer start  -->
 
-     <footer class="black-grad md:mt-20">
+     <footer class="black-grad md:mt-20" id="Contact Us">
 
       <div class=" p-5 text-white md:max-w-[1200px] md:mx-auto">
         <div class="flex flex-col md:flex-row md:gap-[140px] md:py-20 md:max-w-[1200px] mx-auto md:items-baseline">
